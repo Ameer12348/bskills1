@@ -1,0 +1,125 @@
+.homepage-category-section-heading{
+    transition: all 0.4s;
+    color: #302d3a;
+    font-size: 40px;
+    text-align: left;
+    @media (width <992px) {
+        text-align: center;
+    }
+    @media (width <768px) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.banner-imaginary-2{
+    position: relative;
+    &::before{
+        content: '';
+        background: url('../media/hero-banner-dots.svg');
+        opacity:0.3;
+        z-index: -1;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        height: 250px;
+        width: 110px;
+    }
+    &::after{
+        content: '';
+        background: url('../media/hero-banner-dots.svg');
+        opacity:0.3;
+        z-index: -1;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        height: 250px;
+        width: 110px;
+    }
+
+}
+
+.homepage-category-section-para{
+    font-size: 20px;
+    @media (width <768px) {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+}
+.homepage-category-section-list{
+    font-size: 16px;
+    @media (width <576px) {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}
+.know-more-section-heading{
+    transition: all 0.4s;
+    color: #302d3a;
+    font-size: 40px;
+    text-align: left;
+    @media (width <992px) {
+        font-size: 30px;
+    }
+    @media (width <768px) {
+        font-size: 25px;
+    }
+
+}
+.know-more-img-div{
+    border-radius: 10px;
+    border-top-right-radius: 30% ;
+    position: relative;
+    z-index: 10;
+    @media (width<768px) {
+        width: 80%;
+    }
+    @media (width<576px) {
+        width: 100%;
+    }
+    img{
+        border-radius: 10px;
+        border-top-right-radius: 30% ;
+        width: 100%;
+        
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 40px;
+        left: 30px;
+        border: 3px solid #f68c20;
+        border-radius: 10px;
+        border-top-right-radius: 30% ;
+        z-index: -1;
+}
+}
+
+.testimonial-div{
+    position: relative;
+    &::before{
+        content: '';
+        background: url('../media/hero-banner-dots.svg');
+        opacity:0.3;
+        z-index: -1;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        height: 250px;
+        width: 110px;
+    }
+    &::after{
+        content: '';
+        background: url('../media/hero-banner-dots.svg');
+        opacity:0.3;
+        z-index: -1;
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+        height: 250px;
+        width: 110px;
+    }
+}

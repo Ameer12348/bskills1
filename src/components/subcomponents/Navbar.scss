@@ -1,0 +1,126 @@
+.navbar-main {
+    transition: all 0.5s;
+    background-color: #fef0ef;
+    z-index: 10000;
+}
+
+.main-nav-links-list {
+
+    &:hover,
+    &:focus {
+        span {
+            transition: all 0.5s ease-out;
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.navbar-sublinks {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+.pages-sublinks-toggle {
+    &:hover,
+    &:focus {
+        .pages-sublinks {
+            max-height: 100vh;
+            li:hover{
+                background-color: #5f5982;
+                transition: all 0.3s;
+                a{
+                    color: white !important;
+                }
+            }
+        }
+    }
+}  
+.courses-sublinks-toggle {
+    &:hover,
+    &:focus {
+        .courses-sublinks {
+            max-height: 100vh;
+            li:hover{
+                background-color: #5f5982;
+                transition: all 0.3s;
+                a{
+                    color: white !important;
+                }
+            }
+        }
+    }
+}  
+.features-sublinks-toggle {
+    &:hover,
+    &:focus {
+        .features-sublinks {
+            max-height: 100vh;
+            li:hover{
+                background-color: #5f5982;
+                transition: all 0.3s;
+                a{
+                    color: white !important;
+                }
+            }
+        }
+    }
+}  
+
+
+.main-nav-links {
+    z-index: 100000;
+    
+}
+@media (width >=992px) {
+    .main-nav-links {
+        width: auto !important;
+    }
+
+    .navbar-sublinks {
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        width: 300px;
+    }
+}
+
+@media (width < 992px) {
+    .main-nav-links {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: fixed;
+        right: 0px;
+        top: 63px;
+        flex-direction: column;
+        background-color: white;
+        height: calc(100vh - 63px);
+        width: 0px;
+        transition: all 0.3s;
+
+        * {
+            white-space: nowrap;
+        }
+
+        >li {
+            padding: 8px 0px;
+            border-bottom: 1px solid #f56962;
+        }
+
+    }
+
+}
+
+.hamburger {
+    span {
+        transition: all 0.3s;
+    }
+
+    span:nth-child(1) {
+        transform-origin: top left;
+    }
+
+    span:nth-child(3) {
+        transform-origin: bottom left;
+    }
+}

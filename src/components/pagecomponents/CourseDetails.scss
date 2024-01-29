@@ -1,0 +1,26 @@
+.course-detail-banner-heading{
+    font-size: 40px;
+    @media (width<576px) {
+        font-size: 30px;
+    }
+}
+.course-detail-banner-para{
+    color: #5f5982;
+    font-size: 20px;
+    @media (width<576px) {
+        font-size: 16px;
+    }
+}
+.course-details-description-heading{
+    font-size: 22px;
+    @media (width<576px) {
+        font-size: 20px;
+    }
+}
+.course-details-description-para{
+    font-size: 16px;
+    @media (width<576px) {
+        font-size: 14px;
+        color: #5f5982;        
+    }
+}

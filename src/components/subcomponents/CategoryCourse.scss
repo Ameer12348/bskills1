@@ -1,0 +1,72 @@
+.category-course-row{
+    div:nth-child(2n+0){
+        .category-card{
+            transition: all 0.6s;
+            *{
+                transition: all 0.6s;
+            }
+            background-color: #edfaef;
+            .category-icon-div{
+                font-size: 30px;
+                padding: 10px 15px;
+                border-radius: 10px;
+                display: inline-block;
+                background-color: #acf0ba;
+                color:#30a748;
+            }
+            .category-course-heading{
+                color: #302d3a;
+                font-size: 22px;
+                @media (width < 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .category-card:hover{
+            background-color: #23eb4b;
+            .category-icon-div{
+                background-color: white;
+                color:#85c091;
+            }
+            .category-course-heading{
+                color: white;
+            }
+        }
+    }
+    div:nth-child(2n+1){
+        .category-card{
+            transition: all 0.6s;
+            *{
+                transition: all 0.6s;
+            }
+            background-color: #eae8f6;
+            .category-icon-div{
+                font-size: 30px;
+                padding: 10px 15px;
+                border-radius: 10px;
+                display: inline-block;
+                background-color: #b4acf0;
+                color:#271f7b;
+            }
+            .category-course-heading{
+                color: #302d3a;
+                font-size: 22px;
+                @media (width < 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .category-card:hover{
+            background-color: #5746d2;
+            .category-icon-div{
+                background-color: white;
+                color:#7069ae;
+            }
+            .category-course-heading{
+                color: white;
+            }
+        }
+    }
+
+    
+}

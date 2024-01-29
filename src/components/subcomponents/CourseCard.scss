@@ -1,0 +1,13 @@
+.course-card{
+    background-color: white;
+    border:  1px solid rgba(142, 140, 140, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 2px rgba(84, 84, 84, 0.2);
+    &:hover{
+        translate: 0px -10px;
+        border:  1px solid rgba(142, 140, 140, 0.2);
+        box-shadow: 5px 10px 15px 5px rgba(84, 84, 84, 0.2);
+    }
+}

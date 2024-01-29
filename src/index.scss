@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #fef0ef;
+    box-shadow: inset 1px 1px 5px  #302d3a28;
+}
+body::-webkit-scrollbar-thumb{
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: #302d3a54;
+    border-radius: 5px;
+    &:hover{
+        background-color: #302d3aba;
+    }
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lexend', sans-serif;
+    transition: all 0.6s;
+}
